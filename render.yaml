@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: lingo-translation-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: LINGO_API_KEY
+        value: api_pm1eltg99qigo1cjmv1pcv7qapi_pm1eltg99qigo1cjmv1pcv7q
